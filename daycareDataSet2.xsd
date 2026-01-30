@@ -1,0 +1,62 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="daycareDataSet2" targetNamespace="http://tempuri.org/daycareDataSet2.xsd" xmlns:mstns="http://tempuri.org/daycareDataSet2.xsd" xmlns="http://tempuri.org/daycareDataSet2.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="daycareConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="daycareConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.DaycareApplication.Properties.Settings.GlobalReference.Default.daycareConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="Child_Application_ViewTableAdapter" GeneratorDataComponentClassName="Child_Application_ViewTableAdapter" Name="Child_Application_View" UserDataComponentName="Child_Application_ViewTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="daycareConnectionString (Settings)" DbObjectName="daycare.dbo.Child_Application_View" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT c_fullName, c_birthdayDate, c_birthCertificate, requiredEnteringDate FROM dbo.Child_Application_View</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="c_fullName" DataSetColumn="c_fullName" />
+              <Mapping SourceColumn="c_birthdayDate" DataSetColumn="c_birthdayDate" />
+              <Mapping SourceColumn="c_birthCertificate" DataSetColumn="c_birthCertificate" />
+              <Mapping SourceColumn="requiredEnteringDate" DataSetColumn="requiredEnteringDate" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="daycareDataSet2" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_UserDSName="daycareDataSet2" msprop:Generator_DataSetName="daycareDataSet2">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="Child_Application_View" msprop:Generator_RowEvHandlerName="Child_Application_ViewRowChangeEventHandler" msprop:Generator_RowDeletedName="Child_Application_ViewRowDeleted" msprop:Generator_RowDeletingName="Child_Application_ViewRowDeleting" msprop:Generator_RowEvArgName="Child_Application_ViewRowChangeEvent" msprop:Generator_TablePropName="Child_Application_View" msprop:Generator_RowChangedName="Child_Application_ViewRowChanged" msprop:Generator_RowChangingName="Child_Application_ViewRowChanging" msprop:Generator_TableClassName="Child_Application_ViewDataTable" msprop:Generator_RowClassName="Child_Application_ViewRow" msprop:Generator_TableVarName="tableChild_Application_View" msprop:Generator_UserTableName="Child_Application_View">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="c_fullName" msprop:Generator_ColumnPropNameInRow="c_fullName" msprop:Generator_ColumnPropNameInTable="c_fullNameColumn" msprop:Generator_ColumnVarNameInTable="columnc_fullName" msprop:Generator_UserColumnName="c_fullName">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="c_birthdayDate" msprop:Generator_ColumnPropNameInRow="c_birthdayDate" msprop:Generator_ColumnPropNameInTable="c_birthdayDateColumn" msprop:Generator_ColumnVarNameInTable="columnc_birthdayDate" msprop:Generator_UserColumnName="c_birthdayDate" type="xs:dateTime" />
+              <xs:element name="c_birthCertificate" msprop:Generator_ColumnPropNameInRow="c_birthCertificate" msprop:Generator_ColumnPropNameInTable="c_birthCertificateColumn" msprop:Generator_ColumnVarNameInTable="columnc_birthCertificate" msprop:Generator_UserColumnName="c_birthCertificate">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="requiredEnteringDate" msprop:Generator_ColumnPropNameInRow="requiredEnteringDate" msprop:Generator_ColumnPropNameInTable="requiredEnteringDateColumn" msprop:Generator_ColumnVarNameInTable="columnrequiredEnteringDate" msprop:Generator_UserColumnName="requiredEnteringDate" type="xs:dateTime" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

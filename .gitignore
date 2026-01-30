@@ -1,0 +1,13 @@
+﻿# Visual Studio
+.vs/
+bin/
+obj/
+
+# User files
+*.user
+*.suo
+
+# Databases
+*.mdf
+*.ldf
+*.db

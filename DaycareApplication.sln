@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.12.35707.178
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DaycareApplication", "DaycareApplication.csproj", "{EE3D5903-2609-48D1-9345-F64430ED0843}"
+EndProject
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "DaycareSetup", "..\..\..\Documents\DaycareSetup\DaycareSetup.vdproj", "{65B51B17-D877-4C4A-AA77-BC55A6719A6B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{EE3D5903-2609-48D1-9345-F64430ED0843}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EE3D5903-2609-48D1-9345-F64430ED0843}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EE3D5903-2609-48D1-9345-F64430ED0843}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EE3D5903-2609-48D1-9345-F64430ED0843}.Release|Any CPU.Build.0 = Release|Any CPU
+		{65B51B17-D877-4C4A-AA77-BC55A6719A6B}.Debug|Any CPU.ActiveCfg = Debug
+		{65B51B17-D877-4C4A-AA77-BC55A6719A6B}.Release|Any CPU.ActiveCfg = Release
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
